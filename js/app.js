@@ -65,7 +65,8 @@ require([
 
     var getValue = function(autobiographyText){
         $.get("data/data.json?"+new Date().getTime(),{},function(data){
-            data = data.replace("{Age}",age);
+
+            data = data.replace("[Age]",age);
             var data = $.parseJSON(data);
 
             data['autobiography']['data'] = autobiographyText;
@@ -76,7 +77,7 @@ require([
             }
 
             int();
-        });
+        },'text');
     }
 
     var scrollTop = function(target){
