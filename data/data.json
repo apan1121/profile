@@ -6,13 +6,14 @@
       "姓名": "陳邦綸",
       "性別": "男♂",
       "出生日期": "1985-05",
-      "年齡": "{Age} 歲",
+      "年齡": "[Age] 歲",
       "血型": "A",
       "兵役": "預士 退役",
       "婚姻": "未婚",
       "居住地": "台北市 松山區",
       "電話": "<a href='tel:0987819517'>0987-819-517</a>",
-      "Email": "<a href='mailto:apan1121@gmail.com?Subject=[面試通知]'>apan1121@gmail.com</a>"
+      "Email": "<a href='mailto:apan1121@gmail.com?Subject=[面試通知]'>apan1121@gmail.com</a>",
+      "GitHub": "<a href='https://github.com/apan1121/' target='_blank'>apan1121</a>"
     }
   },
   "schoolinfo": {
@@ -38,7 +39,7 @@
     "icon": "building",
     "data": {
       "2015.01 - now": "GOLiFE 穿戴式雲端工程師",
-      "2011.05 - 2015.11": "嘉應資訊 網頁工程師",
+      "2011.05 - 2014.11": "嘉應資訊 網頁工程師",
       "2010.10 - 2011.04": "極致行動 網頁工程師",
       "2008.06 - 2008.11": "工業技術研究院 約聘研究員",
       "2007.07 - 2007.08": "芯微科技 暑期工讀"
@@ -64,7 +65,9 @@
         "GOLiFE 語言檔管理平台（內部使用）",
         "嘉應資訊 <a href='http://www.kinoot.com/class/index.php' target='_blank'>ClassLocker 班雲</a>",
         "嘉應資訊 <a href='http://www.kinoot.com' target='_blank'>Kinoot 親子社群網站</a>（部分）",
-        "嘉應資訊 <a href='http://goo.gl/Ug1qri' target='_blank'>zMail - Safe Email for Kids</a>（API）"
+        "嘉應資訊 <a href='http://goo.gl/Ug1qri' target='_blank'>zMail - Safe Email for Kids</a>（API）",
+        "興趣 <a href='http://apan1121.github.io/earthquake/' target='_blank'>全球 24 小時地震資訊</a>",
+        "興趣 <a href='http://apan1121.github.io/WYSIWYG2Markdown/' target='_blank'>WYSIWYG 轉 Markdown</a>"
       ],
       "過去作品": [
         "極致行動 明珠三國 官方網站（季節性改版）",
