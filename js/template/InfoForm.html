@@ -1,0 +1,41 @@
+<div class="boxer item hide needTransition" rel='<%=key%>' style=''>
+    <div class='title'> <i class="fa fa-<%=data["icon"]%>"></i> <%=data['name']%></div>
+    <div class='info'>
+        <div class='content'>
+
+
+                <% if (_.isObject(data['data'])) {%>
+                    <div class="table-form">
+                    <%_(data['data']).each(function(value,name) {%>
+                    <div class="table-form-row">
+                        <div class="table-form-td table-form-title">
+                            <%=name%>
+                        </div>
+                        <div class="table-form-td table-form-value">
+
+                            <%if(_.isString(value)){%>
+                            <%=value%>
+                            <%} else if(_.isArray(value)){%>
+                                <ol class="list-ol">
+                                <%_(value).each(function(v,n) {%>
+                                    <li class="list-li"><%=v%></li>
+                                <%});%>
+                                </ol>
+                            <%}%>
+                        </div>
+                    </div>
+                    <%});%>
+                    </div>
+                <% } else if (_.isString(data['data'])) {%>
+                    <div class='LogTextBox'>
+                        <div class='LogText'>
+                            <%=data['data']%>
+                        </div>
+                    </div>
+                <% }%>
+
+
+
+        </div>
+    </div>
+</div>

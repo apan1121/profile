@@ -1,0 +1,127 @@
+@media print {
+    body{
+        margin: 10px;
+        padding: 10px;
+
+        .toolBar{
+            top: 0px;
+            position: static;
+            height: 200px;
+            .nav{
+                display: none;
+            }
+            height: 200px;
+            .avatar{
+                width: 150px;
+                height: 200px;
+                top: 0px;
+                position: static;
+                .img{
+                    border-radius:0%;
+                    width: 150px;
+                    height: 200px;
+                    border: 0px;
+                    box-shadow: 0px 0px 0px #888888;
+                    img {
+
+                    }
+                }
+            }
+            &.bind{
+                height:250px;
+                .avatar{
+                    width: 150px;
+                    height: 200px;
+                    top: 0px;
+                    position: static;
+                    .img{
+                        border-radius:0%;
+                        width: 150px;
+                        height: 200px;
+                        border: 0px;
+                        img {
+
+                        }
+                    }
+                }
+            }
+        }
+
+        hr{
+            display: block;
+        }
+
+        .mainPage{
+            opacity: 1;
+            display: block;
+            top:0px;
+            position: static;
+
+            .boxer{
+                opacity: 1;
+                display: block;
+                &.hide{
+                    opacity: 1;
+                    display: block;
+                }
+
+            }
+
+            .boxer{
+                .title{
+                    border:0px;
+                    background:transparent;
+                    display:inline-block;
+                    font-weight:900;
+                    margin-bottom:-1px;
+                    padding:10px 0px;
+                    i.fa{
+
+                        display: none;
+                    }
+                }
+                .info{
+                    border:0px;
+                    background:transparent;
+                    padding:0px;
+                }
+
+                .table-form{
+                    display: table;
+                    width:100%;
+                    background: #EDEDED;
+                    border:1px solid #AAA;
+
+                    border-collapse:collapse;
+                    border-spacing:0;
+
+                    border-radius:5px;
+                    -moz-border-radius:5px;
+                    -webkit-border-radius: 5px;
+                    .table-form-row{
+                        .table-form-td{
+                            display: table-cell;
+                            border:1px solid #AAA;
+                            padding:10px;
+                        }
+                        .table-form-title{
+                            text-align:right;
+                            width:150px;
+                            background: #EDEDED;
+                        }
+                        .table-form-value{
+                            text-align:left;
+                            background: #FFFFCC;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer{
+            display: none;
+        }
+
+
+    }
+}
