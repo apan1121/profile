@@ -1,5 +1,5 @@
 <div class="boxer item hide needTransition" rel='<%=key%>' style=''>
-    <div class='title'> <i class="fa fa-<%=data["icon"]%>"></i> <%=data['name']%></div>
+    <div class='title'> <i class="icon-<%=data["icon"]%>"></i> <%=data['name']%></div>
     <div class='info'>
         <div class='content'>
 
@@ -9,7 +9,11 @@
                     <%_(data['data']).each(function(value,name) {%>
                     <div class="table-form-row">
                         <div class="table-form-td table-form-title">
-                            <%=name%>
+                            <% if (['GitHub','Linkedin'].indexOf(name) >=0) {%>
+                                <i class="icon icon-<%=name.toLowerCase()%>"></i>
+                            <% }else {%>
+                                <%=name%>
+                            <% }%>
                         </div>
                         <div class="table-form-td table-form-value">
 
