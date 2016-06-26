@@ -255,6 +255,9 @@ body .mainPage .boxer .info .content .table-form .table-form-row .table-form-td.
 body .mainPage .boxer .info .content .table-form .table-form-row:last-child .table-form-td {
   border-bottom: 0px;
 }
+body .mainPage .boxer .info .content .table-form .icon {
+  font-size: 1.5em;
+}
 body .mainPage .boxer .info .content .LogTextBox {
   border: 1px solid #CACACA;
   border-radius: 3px;

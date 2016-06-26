@@ -157,13 +157,13 @@ require([
 
         $(".allContent").animate({opacity:1});
         $(".loading").animate({opacity:0});
-
+        initFlage = true;
         setTimeout(function(){
             $(".navButton[ref='"+autoClickNavID+"']").trigger("click");
         },100);
 
     }
-
+    var initFlage = false;
    var AppRouter = Backbone.Router.extend({
         routes: {
             // Default
@@ -172,7 +172,14 @@ require([
         },
         autoClickNavButton: function(id){
             autoClickNavID = id;
-            getAutobiography();
+            if (initFlage === false) {
+                getAutobiography();
+            } else {
+                setTimeout(function(){
+                    $(".navButton[ref='"+autoClickNavID+"']").trigger("click");
+                },100);
+            }
+
         },
         defaultAction: function(){
             getAutobiography();
