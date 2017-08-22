@@ -12,7 +12,7 @@ define({
                     "Tripresso 官網後台管理系統",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
+                    "PHP", "HTML", "CSS", "Javascript", "SEO","Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
                 ]
             },
             {

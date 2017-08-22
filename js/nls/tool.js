@@ -14,7 +14,7 @@ define({
             "verControl": ["Git(GitHub", "bitbucket)", "SVN"],
             "dataTrans": ["JSON", "CSV", "XML"],
             "developTool": ["Sublime Text", "eclipse"],
-            "other": ["Facebook API", "Line API", "AdminLTE", "FireBase", "API.AI"],
+            "other": ["SEO","Facebook API", "Line API", "AdminLTE", "FireBase", "API.AI"],
             "developExperience": ["API 製作",
                 "小額付款金流介接",
                 "社群網站",
