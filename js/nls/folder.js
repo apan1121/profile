@@ -6,7 +6,7 @@ define({
                 "product_photo": ["https://dszfbyatv8d2t.cloudfront.net/facebook/home_for_FB_only.jpg", "./img/product/tripresso/0.png", "./img/product/tripresso/1.png", "./img/product/tripresso/2.png", "./img/product/tripresso/3.png", "./img/product/tripresso/4.png", "./img/product/tripresso/5.png", "./img/product/tripresso/6.png", "./img/product/tripresso/7.png", "./img/product/tripresso/8.png", "./img/product/tripresso/9.png", "./img/product/tripresso/10.png"],
                 "type": "工作",
                 "tag": [
-                    "RWD", "PHP", "HTML", "CSS", "Javascript", "Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
+                    "RWD", "PHP", "HTML", "CSS", "Javascript", "SEO", "Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
                 ]
             },
             {
