@@ -13,9 +13,17 @@
                                 <div class="type"><%=product.type%></div>
                                 <div class="thumbail imgLiquidFill <%=product.product_photo[0]!=''?'photoGroup':''%>">
                                     <img src="<%=product.product_photo[0]||noPhoto%>" alt="<%=product.product_name%>">
+                                    <% if (product.product_photo[0] != ""){%>
+                                    <div class="photoCount">
+                                        <% var photoCount = (product.product_photo.length > 3)?3: product.product_photo.length;
+                                            for (var i = 0; i < photoCount; i ++) {%>
+                                            。
+                                        <%}%>
+                                    </div>
+                                    <% }%>
                                 </div>
                                 <% if (product.product_link!="") {%>
-                                <div class="title"><a href="<%=product.product_link%>" target="_blank"><%=product.product_name%></a></div>
+                                <div class="title"><a href="<%=product.product_link%>" target="_blank"><%=product.product_name%> <i class="icon icon-link"></i></a></div>
                                 <% } else {%>
                                 <div class="title"><%=product.product_name%></div>
                                 <% }%>

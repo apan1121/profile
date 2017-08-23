@@ -690,11 +690,23 @@ body {
             .thumbail {
                 height: 200px;
                 border-radius: 5px;
+                border: 1px solid #ccc;
+                position: relative;
                 img {
                     display: none;
                 }
+                .photoCount{
+                    position: absolute;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+                    color: #FFF;
+                    font-weight: 900;
+                }
                 &.photoGroup{
                     cursor: pointer;
+                    box-shadow: 0px 2px 10px #999;
                 }
             }
             .title {

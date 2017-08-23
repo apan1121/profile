@@ -12,7 +12,7 @@ define({
                     "Tripresso 官網後台管理系統",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "SEO","Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
+                    "PHP", "HTML", "CSS", "Javascript", "RWD", "SEO","Redis", "MemCache", "RESTful API", "Mixpanel","GA","NodeJS", "Firebase",  "API.AI"
                 ]
             },
             {
@@ -27,7 +27,7 @@ define({
                     "TRAVEL 簡單你的旅遊生活",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "RESTful API", "OAuth 2.0 Server", "多語系"
+                    "PHP", "HTML", "CSS", "Javascript", "RESTful API", "三層式架構", "OAuth 2.0 Server", "i18n"
                 ]
             },
             {
@@ -42,7 +42,7 @@ define({
                     "WishBook",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "API", "多語系"
+                    "PHP", "HTML", "CSS", "Javascript", "API", "i18n","RWD"
                 ]
             },
             {

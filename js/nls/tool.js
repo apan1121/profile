@@ -8,13 +8,14 @@ define({
         ],
         "tools": {
             "PHP": ["CodeIgniter", "Yii", "composer"],
-            "JS": ["jQuery 自製或線上套件", "RequireJS", "Backbone", "Bootstrap", "NodeJS"],
-            "CSS HTML": ["HTML5", "CSS3", "LESS"],
+            "JS": ["jQuery 自製或線上套件", "RequireJS", "Backbone", "NodeJS"],
+            "CSS HTML": ["HTML5", "CSS3", "LESS", "Bootstrap"],
             "Cached": ["Redis", "Memcached"],
-            "verControl": ["Git(GitHub", "bitbucket)", "SVN"],
+            "verControl": ["Git(GitHub、bitbucket)", "SVN"],
             "dataTrans": ["JSON", "CSV", "XML"],
             "developTool": ["Sublime Text", "eclipse"],
-            "other": ["SEO","Facebook API", "Line API", "AdminLTE", "FireBase", "API.AI"],
+            "Server": ["Linode", "AWS EC2"],
+            "other": ["SEO","GA","Mixpanel","Facebook API", "Line API", "AdminLTE", "Firebase", "API.AI"],
             "developExperience": ["API 製作",
                 "小額付款金流介接",
                 "社群網站",
@@ -26,7 +27,8 @@ define({
                 "OAuth2 Server",
                 "SVG Animate",
                 "軌跡追蹤處理",
-                "Line BOT"
+                "Line BOT",
+                "使用者追蹤"
             ],
         }
     }

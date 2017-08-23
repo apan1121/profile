@@ -7,7 +7,7 @@ define({
       "intro": "Hi~ 我是 Byron 陳邦綸<br>是一個熱愛寫 Code 的小伙子<br>除了程式語言世界<br>我也愛泡在大海中潛水～<br>",
       "socail": {
           "linkedin": "https://www.linkedin.com/in/apan1121/",
-          "facebook": "https://www.facebook.com/apan1121",
+          "resume": "https://www.cakeresume.com/apan1121",
           "github": "https://github.com/apan1121",
           "instagram": "https://www.instagram.com/apan0517"
       },
