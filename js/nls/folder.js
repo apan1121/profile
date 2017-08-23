@@ -12,7 +12,7 @@ define({
             {
                 "product_name": "TripSAAS 旅樂同業上架平台",
                 "product_link": "",
-                "product_photo": ["https://dszfbyatv8d2t.cloudfront.net/facebook/home_for_FB_only.jpg"],
+                "product_photo": ["./img/product/b2b/0.png", "./img/product/b2b/1.png","./img/product/b2b/2.png","./img/product/b2b/3.png","./img/product/b2b/4.png","./img/product/b2b/5.png","./img/product/b2b/6.png","./img/product/b2b/7.png","./img/product/b2b/8.png","./img/product/b2b/9.png"],
                 "type": "工作",
                 "tag": [
                     "RWD", "PHP", "HTML", "CSS", "Javascript", "Redis", "MemCache",

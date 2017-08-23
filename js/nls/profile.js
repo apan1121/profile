@@ -19,5 +19,5 @@ define({
       "location": "台北, 台灣",
       "marrid":"未婚",
       "interest":"電影、攝影、漫畫、潛水、滑板",
-    }
+    },
 });
