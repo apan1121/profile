@@ -23,6 +23,7 @@ require([jsVars.baseResUrl + 'js/lib/common.js'], function(common) {
 
                 that.$el.find(".imgLiquidFill").imgLiquid();
 
+                mixpanel.track("read resume");
             }
         });
 
