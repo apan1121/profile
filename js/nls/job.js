@@ -12,7 +12,7 @@ define({
                     "Tripresso 官網後台管理系統",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "RWD", "SEO","Redis", "MemCache", "RESTful API", "Mixpanel","GA","NodeJS", "Firebase",  "API.AI"
+                    "PHP", "HTML", "CSS", "Javascript", "MySQL","RWD", "SEO","Redis", "MemCache", "RESTful API", "Mixpanel","GA","NodeJS", "Firebase",  "API.AI"
                 ]
             },
             {
@@ -27,7 +27,7 @@ define({
                     "TRAVEL 簡單你的旅遊生活",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "RESTful API", "三層式架構", "OAuth 2.0 Server", "i18n"
+                    "PHP", "HTML", "CSS", "Javascript", "MySQL","RESTful API", "三層式架構", "OAuth 2.0 Server", "i18n"
                 ]
             },
             {
@@ -42,7 +42,7 @@ define({
                     "WishBook",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript", "API", "i18n","RWD"
+                    "PHP", "HTML", "CSS", "Javascript", "MySQL","API", "i18n","RWD"
                 ]
             },
             {
@@ -56,7 +56,7 @@ define({
                     "小額付款金流介接",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "HTML", "CSS", "Javascript", "MySQL"
                 ]
             },
             {
@@ -69,7 +69,7 @@ define({
                     "電腦報修平台",
                 ],
                 "experence": [
-                    "PHP", "HTML", "CSS", "Javascript",
+                    "PHP", "HTML", "CSS", "Javascript", "MySQL",
                 ]
             },
             {
@@ -95,7 +95,7 @@ define({
                     "台灣創意設計中心出差勤系統",
                 ],
                 "experence": [
-                    "ASP.NET", "HTML", "CSS", "Javascript"
+                    "ASP.NET", "HTML", "CSS", "Javascript", "MS SQL"
                 ]
             },
         ],

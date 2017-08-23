@@ -1,9 +1,9 @@
 define({
     "root": {
         "skills": [
-            { name: "PHP", "score": 70 },
+            { name: "PHP", "score": 75 },
             { name: "Javascript", "score": 80 },
-            { name: "HTML", "score": 90 },
+            { name: "MySQL", "score": 70 },
             { name: "CSS", "score": 85 },
         ],
         "tools": {
@@ -12,6 +12,7 @@ define({
             "CSS HTML": ["HTML5", "CSS3", "LESS", "Bootstrap"],
             "Cached": ["Redis", "Memcached"],
             "verControl": ["Git(GitHub、bitbucket)", "SVN"],
+            "database": ["MySQL"],
             "dataTrans": ["JSON", "CSV", "XML"],
             "developTool": ["Sublime Text", "eclipse", "Trello"],
             "Server": ["Linode", "AWS EC2"],

@@ -6,7 +6,7 @@ define({
                 "product_photo": ["https://dszfbyatv8d2t.cloudfront.net/facebook/home_for_FB_only.jpg", "./img/product/tripresso/0.png", "./img/product/tripresso/1.png", "./img/product/tripresso/2.png", "./img/product/tripresso/3.png", "./img/product/tripresso/4.png", "./img/product/tripresso/5.png", "./img/product/tripresso/6.png", "./img/product/tripresso/7.png", "./img/product/tripresso/8.png", "./img/product/tripresso/9.png", "./img/product/tripresso/10.png"],
                 "type": "工作",
                 "tag": [
-                    "RWD", "PHP", "HTML", "CSS", "Javascript", "SEO", "Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
+                    "RWD", "PHP", "MySQL","HTML", "CSS", "Javascript", "SEO", "Redis", "MemCache", "RESTful API", "NodeJS", "Firebase",  "API.AI"
                 ]
             },
             {
@@ -15,7 +15,7 @@ define({
                 "product_photo": ["./img/product/b2b/0.png", "./img/product/b2b/1.png","./img/product/b2b/2.png","./img/product/b2b/3.png","./img/product/b2b/4.png","./img/product/b2b/5.png","./img/product/b2b/6.png","./img/product/b2b/7.png","./img/product/b2b/8.png","./img/product/b2b/9.png"],
                 "type": "工作",
                 "tag": [
-                    "RWD", "PHP", "HTML", "CSS", "Javascript", "Redis", "MemCache",
+                    "RWD", "PHP", "MySQL","HTML", "CSS", "Javascript", "Redis", "MemCache",
                 ]
             },
             {
@@ -24,7 +24,7 @@ define({
                 "product_photo": ["./img/product/ics/0.png","./img/product/ics/1.png","./img/product/ics/2.png","./img/product/ics/3.png","./img/product/ics/4.png"],
                 "type": "工作",
                 "tag": [
-                    "RWD", "PHP", "HTML", "CSS", "Javascript", "Redis", "MemCache",
+                    "RWD", "PHP", "MySQL","HTML", "CSS", "Javascript", "Redis", "MemCache",
                 ]
             },
 
@@ -34,7 +34,7 @@ define({
                 "product_photo": ["./img/product/fit/fit.png","./img/product/fit/0.png"],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML","CSS", "Javascript"
                 ]
             },
 
@@ -44,7 +44,7 @@ define({
                 "product_photo": ["./img/product/run/run.png","./img/product/run/0.png","./img/product/run/1.png","./img/product/run/2.png","./img/product/run/3.png","./img/product/run/4.png","./img/product/run/5.png","./img/product/run/6.png"],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
 
@@ -54,7 +54,7 @@ define({
                 "product_photo": ["./img/product/travel/travel.png","./img/product/travel/0.png","./img/product/travel/1.png"],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
 
@@ -64,7 +64,7 @@ define({
                 "product_photo": ["./img/product/i18n/KGZRYre.png","./img/product/i18n/t7Itw5t.png","./img/product/i18n/3LHkS6x.png","./img/product/i18n/12ojH2c.png","./img/product/i18n/idLyOF1.png","./img/product/i18n/WwJ7InU.png"],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
 
@@ -74,7 +74,7 @@ define({
                 "product_photo": ["./img/product/kinoot/0.png","./img/product/kinoot/1.png","./img/product/kinoot/1.png","./img/product/kinoot/2.png","./img/product/kinoot/3.png","./img/product/kinoot/4.png"],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL", "HTML", "CSS", "Javascript"
                 ]
             },
 
@@ -84,7 +84,7 @@ define({
                 "product_photo": ["./img/product/classlocker/0.png","./img/product/classlocker/1.png","./img/product/classlocker/2.jpeg","./img/product/classlocker/3.png","./img/product/classlocker/4.png"],
                 "type": "工作",
                 "tag": [
-                    "RWD", "PHP", "HTML", "CSS", "Javascript"
+                    "RWD", "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -93,7 +93,7 @@ define({
                 "product_photo": ["./img/product/zmail/0.jpeg","./img/product/zmail/1.jpeg","./img/product/zmail/2.jpeg","./img/product/zmail/3.jpeg"],
                 "type": "工作",
                 "tag": [
-                    "PHP", "API"
+                    "PHP", "API","MySQL",
                 ]
             },
             {
@@ -102,7 +102,7 @@ define({
                 "product_photo": ["./img/product/wishbook/0.png","./img/product/wishbook/1.png"],
                 "type": "工作",
                 "tag": [
-                    "RWD", "PHP", "HTML", "CSS", "Javascript"
+                    "RWD", "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -121,7 +121,7 @@ define({
                 "product_photo": ["./img/product/moneybot/0.png","./img/product/moneybot/1.png","./img/product/moneybot/2.png"],
                 "type": "興趣",
                 "tag": [
-                    "PHP", "NodeJS", "LINE API"
+                    "PHP", "NodeJS", "LINE API","MySQL",
                 ]
             },
 
@@ -195,7 +195,7 @@ define({
                 "product_photo": [""],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -204,7 +204,7 @@ define({
                 "product_photo": [""],
                 "type": "工作",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -213,16 +213,7 @@ define({
                 "product_photo": [""],
                 "type": "工作",
                 "tag": [
-                    "PHP", "API"
-                ]
-            },
-            {
-                "product_name": "極致行動 樂透中了沒 [API]",
-                "product_link": "",
-                "product_photo": [""],
-                "type": "工作",
-                "tag": [
-                    "PHP", "API"
+                    "PHP", "MySQL","API"
                 ]
             },
             {
@@ -231,7 +222,7 @@ define({
                 "product_photo": [""],
                 "type": "兵役",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL","HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -249,7 +240,7 @@ define({
                 "product_photo": [""],
                 "type": "打工",
                 "tag": [
-                    "ASP.NET", "HTML", "CSS", "Javascript"
+                    "ASP.NET", "MS SQL","HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -258,7 +249,7 @@ define({
                 "product_photo": [""],
                 "type": "大學",
                 "tag": [
-                    "ASP"
+                    "ASP", "Access"
                 ]
             },
             {
@@ -267,7 +258,7 @@ define({
                 "product_photo": [""],
                 "type": "大學",
                 "tag": [
-                    "PHP", "HTML", "CSS", "Javascript"
+                    "PHP", "MySQL", "HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -276,7 +267,7 @@ define({
                 "product_photo": [""],
                 "type": "大學",
                 "tag": [
-                    "ASP", "HTML", "CSS", "Javascript"
+                    "ASP", "Access", "HTML", "CSS", "Javascript"
                 ]
             },
             {
@@ -285,7 +276,7 @@ define({
                 "product_photo": [""],
                 "type": "大學",
                 "tag": [
-                    "VB"
+                    "VB", "Access"
                 ]
             },
         ],
