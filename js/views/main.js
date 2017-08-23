@@ -99,6 +99,8 @@ define([
             $(window).bind("resize", function() {
                 if ($(window).width() <= 755) {
                     $("body").addClass("mobile");
+                } else {
+                    $("body").removeClass("mobile");
                 }
             }).trigger("resize");
 
