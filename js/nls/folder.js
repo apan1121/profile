@@ -226,7 +226,7 @@ define({
                 ]
             },
             {
-                "product_name": "海軍茲令部 電腦報修平台",
+                "product_name": "海軍司令部 電腦報修平台",
                 "product_link": "",
                 "product_photo": [""],
                 "type": "兵役",
