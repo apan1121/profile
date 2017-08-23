@@ -13,7 +13,7 @@ define({
             "Cached": ["Redis", "Memcached"],
             "verControl": ["Git(GitHub、bitbucket)", "SVN"],
             "dataTrans": ["JSON", "CSV", "XML"],
-            "developTool": ["Sublime Text", "eclipse"],
+            "developTool": ["Sublime Text", "eclipse", "Trello"],
             "Server": ["Linode", "AWS EC2"],
             "other": ["SEO","GA","Mixpanel","Facebook API", "Line API", "AdminLTE", "Firebase", "API.AI"],
             "developExperience": ["API 製作",
