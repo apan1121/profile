@@ -112,7 +112,7 @@ body {
                 overflow: hidden;
                 padding: 0px 10px;
                 font-size: 15px;
-                line-height: 20px;
+                line-height: 25px;
                 color: rgba(255, 255, 255, 0.5);
             }
             .social_box {
@@ -172,6 +172,7 @@ body {
                 position: absolute;
                 top: 0px;
                 width: 100%;
+                z-index: 2;
                 .menu_button {
                     margin: 0 auto;
                     width: 60px;
@@ -215,6 +216,7 @@ body {
                 position: absolute;
                 bottom: 0px;
                 width: 100%;
+                z-index: 1;
                 .menu_button {
                     margin: 0 auto;
                     width: 60px;
@@ -230,6 +232,13 @@ body {
                         left: 50%;
                         transform: translateX(-50%) translateY(-50%);
                         color: rgba(255, 255, 255, 0.5);
+                        &.icon-trans{
+                            font-size: 30px;
+                            display: none;
+                            &.on{
+                                display: initial;
+                            }
+                        }
                     }
                     &:active {
                         background: rgba(255, 255, 255, 1);
@@ -325,6 +334,7 @@ body {
             top: 175px;
             margin: 0px;
             width: 100%;
+            z-index:100;
             .menu_flex {
                 .menu_top {
                     display: flex;
@@ -400,6 +410,7 @@ body {
                 align-items: stretch;
                 padding: 10px;
                 margin-bottom: 2px;
+                line-height: 25px;
             }
             @media screen and (max-width: 750px) {
                 flex-direction: column;
@@ -539,7 +550,7 @@ body {
             }
             .flexTable_col_title {
                 flex: initial;
-                width: 80px;
+                width: 100px;
                 text-align: right;
                 font-weight: 900;
                 color: #aaa;
@@ -577,7 +588,7 @@ body {
             }
             .flexTable_col_title {
                 flex: initial;
-                width: 80px;
+                width: 100px;
                 text-align: right;
                 font-weight: 900;
                 color: #aaa;
@@ -714,6 +725,31 @@ body {
                 color: #000;
             }
         }
+    }
+}
+
+.popupBox{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index:1000;
+    .overlay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(50,50,50,0.9);
+        width: 100vw;
+        height: 100vh;
+    }
+    .popupContent{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 10px;
+        overflow: hidden;
     }
 }
 

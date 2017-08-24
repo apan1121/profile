@@ -45,7 +45,7 @@ define([
                 target: ".content_box .content_flex .content_wrapper",
                 profileJSON: profileLang,
                 lang: lang,
-
+                name: lang["title_profile"],
             });
 
             var education = new EducationBox({
@@ -53,6 +53,7 @@ define([
                 target: ".content_box .content_flex .content_wrapper",
                 educationJSON: educationLang,
                 lang: lang,
+                name: lang["title_education"],
             });
 
             var job = new JobBox({
@@ -60,6 +61,7 @@ define([
                 target: ".content_box .content_flex .content_wrapper",
                 jobJSON: jobLang,
                 lang: lang,
+                name: lang["title_job"],
             });
 
             var tool = new ToolBox({
@@ -67,6 +69,7 @@ define([
                 target: ".content_box .content_flex .content_wrapper",
                 toolJSON: toolLang,
                 lang: lang,
+                name: lang["title_experice"],
             });
 
             var folder = new FolderBox({
@@ -74,6 +77,7 @@ define([
                 target: ".content_box .content_flex .content_wrapper",
                 folderJSON: folderLang,
                 lang: lang,
+                name: lang["title_portfolio"],
             });
 
 

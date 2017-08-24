@@ -6,6 +6,7 @@
 //except for 'app' ones, which are in a sibling
 //directory.
 requirejs.config({
+    locale: jsVars.lang,
     baseUrl: jsVars.baseResUrl+'js',
     // The shim config allows us to configure dependencies for
     // scripts that do not call define() to register a module

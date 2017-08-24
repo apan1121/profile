@@ -8,7 +8,7 @@ define({
         ],
         "tools": {
             "PHP": ["CodeIgniter", "Yii", "composer"],
-            "JS": ["jQuery 自製或線上套件", "RequireJS", "Backbone", "NodeJS"],
+            "JS": ["jQuery plugin", "RequireJS", "Backbone", "NodeJS"],
             "CSS HTML": ["HTML5", "CSS3", "LESS", "Bootstrap"],
             "Cached": ["Redis", "Memcached"],
             "verControl": ["Git(GitHub、bitbucket)", "SVN"],
@@ -17,20 +17,22 @@ define({
             "developTool": ["Sublime Text", "eclipse", "Trello"],
             "Server": ["Linode", "AWS EC2"],
             "other": ["SEO","GA","Mixpanel","Facebook API", "Line API", "AdminLTE", "Firebase", "API.AI"],
-            "developExperience": ["API 製作",
-                "小額付款金流介接",
-                "社群網站",
-                "HTML5 網站開發",
-                "爬蟲資料擷取處理",
-                "RWD 響應畫面",
-                "MVC 前端與後端",
-                "多語系網站",
+            "developExperience": [
+                "API Design and Development",
+                "Small payment flow",
+                "Social Network",
+                "HTML5 Website development",
+                "Fetch Data from other website",
+                "RWD",
+                "MVC Front-End and Back-End",
+                "Multi-language Website",
                 "OAuth2 Server",
                 "SVG Animate",
-                "軌跡追蹤處理",
+                "GPS Tracking processing",
                 "Line BOT",
-                "使用者追蹤"
+                "User Digital Footprint in Website"
             ],
         }
-    }
+    },
+    "zh-tw": true,
 });
