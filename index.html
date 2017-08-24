@@ -43,7 +43,7 @@
 
     }
     var lang = getCookie("lang") || navigator.language || navigator.userLanguage;
-    if (["en-us","zh-tw"].index(lang.toLowerCase()) == -1) {
+    if (["en-us","zh-tw"].indexOf(lang.toLowerCase()) == -1) {
         lang = "en-us";
     }
 
