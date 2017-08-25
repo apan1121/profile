@@ -11,7 +11,7 @@ define({
 
         "school_name": "School",
         "educ_title": "Title",
-        "experence": "Experence",
+        "experence": "Experience",
 
         "company_name": "Name",
         "company_title": "Title",
@@ -21,12 +21,12 @@ define({
         "dataTrans": "Data transfer",
         "developTool": "Tools",
         "other": "Other",
-        "developExperience": "Experice",
+        "developExperience": "Experience",
 
         "title_profile": "Profile",
         "title_education": "Education",
         "title_job": "Jobs",
-        "title_experice": "Experence",
+        "title_experice": "Experience",
         "title_portfolio": "Portfolio",
     },
     "zh-tw": true,
