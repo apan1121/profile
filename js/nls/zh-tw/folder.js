@@ -235,7 +235,7 @@ define({
         },
         {
             "product_name": "於視訊監控中利用背景學習進行前景偵測",
-            "product_link": "",
+            "product_link": "https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=%22%E6%96%BC%E8%A6%96%E8%A8%8A%E7%9B%A3%E6%8E%A7%E4%B8%AD%E5%88%A9%E7%94%A8%E8%83%8C%E6%99%AF%E5%AD%B8%E7%BF%92%E9%80%B2%E8%A1%8C%E5%89%8D%E6%99%AF%E5%81%B5%E6%B8%AC%22.ti.&searchmode=basic",
             "product_photo": [""],
             "type": "研究所",
             "tag": [
