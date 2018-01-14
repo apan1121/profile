@@ -105,6 +105,15 @@ define({
             ]
         },
         {
+            "product_name": "Bingo GO!",
+            "product_link": "https://apan1121.github.io/bingoGo/",
+            "product_photo": ["./img/product/bingoGo/1.png", "./img/product/bingoGo/2.png"],
+            "type": "興趣",
+            "tag": [
+                "RWD", "HTML", "CSS", "Javascript"
+            ]
+        },
+        {
             "product_name": "台灣電廠即時機組發電量",
             "product_link": "https://apan1121.github.io/powerInfo/",
             "product_photo": ["https://apan1121.github.io/powerInfo/img/logo.png", "./img/product/powerinfo/0.png", "./img/product/powerinfo/1.png", "./img/product/powerinfo/2.png", "./img/product/powerinfo/3.png", "./img/product/powerinfo/4.png"],
