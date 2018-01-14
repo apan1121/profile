@@ -8,7 +8,7 @@ define({
         ],
         "tools": {
             "PHP": ["CodeIgniter", "Yii", "composer"],
-            "JS": ["jQuery plugin", "RequireJS", "Backbone", "NodeJS"],
+            "JS": ["jQuery plugin", "RequireJS", "Backbone", "NodeJS", "VueJS", "ReactJS", "Webpack"],
             "CSS HTML": ["HTML5", "CSS3", "LESS", "Bootstrap"],
             "Cached": ["Redis", "Memcached"],
             "verControl": ["Git(GitHub、bitbucket)", "SVN"],
@@ -16,7 +16,7 @@ define({
             "dataTrans": ["JSON", "CSV", "XML"],
             "developTool": ["Sublime Text", "eclipse", "Trello"],
             "Server": ["Linode", "AWS EC2"],
-            "other": ["SEO","GA","Mixpanel","Facebook API", "Line API", "AdminLTE", "Firebase", "API.AI"],
+            "other": ["SEO","GA","Mixpanel","Facebook API", "Line API", "AdminLTE", "Firebase", "API.AI(Dialogflow)"],
             "developExperience": [
                 "API Design and Development",
                 "Small payment flow",

@@ -5,7 +5,7 @@ define({
                 "company_title": "Senior Web Engineer",
                 "company_logo": "./img/company_logo/tripresso.svg",
                 "startDate": "2016.03",
-                "endDate": "now",
+                "endDate": "2017.11",
                 "company_product": [
                     "Tripresso - Travel comparison platform",
                     "TripSAAS - B2B Platform",
@@ -60,7 +60,7 @@ define({
                 ]
             },
             {
-                "company_name": "Information Combate Sectoin, Navy Headquarter",
+                "company_name": "Information Combate Section, Navy Headquarter",
                 "company_title": "通資電下士",
                 "company_logo": "./img/company_logo/navy.png",
                 "startDate": "2009.10",
