@@ -4,7 +4,7 @@ define({
             "company_title": "資深網頁工程師",
             "company_logo": "./img/company_logo/tripresso.svg",
             "startDate": "2016.03",
-            "endDate": "2017.01",
+            "endDate": "2017.11",
             "company_product": [
                 "Tripresso 旅遊咖團體旅遊比較平台",
                 "TripSAAS 旅樂同業上架平台",
