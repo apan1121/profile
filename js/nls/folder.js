@@ -115,6 +115,15 @@ define({
                 ]
             },
             {
+                "product_name": "Travel tracker",
+                "product_link": "https://tracker.apan1121.info/",
+                "product_photo": ["./img/product/tracker/1.png", "./img/product/tracker/2.png", "./img/product/tracker/3.png", "./img/product/tracker/4.png", "./img/product/tracker/5.png"],
+                "type": "amateur",
+                "tag": [
+                    "RWD", "HTML", "CSS", "Javascript", "Firebase", "Imgur"
+                ]
+            },
+            {
                 "product_name": "Power Generation Unit in Taiwan Power Plant",
                 "product_link": "https://apan1121.github.io/powerInfo/",
                 "product_photo": ["https://apan1121.github.io/powerInfo/img/logo.png","./img/product/powerinfo/0.png","./img/product/powerinfo/1.png","./img/product/powerinfo/2.png","./img/product/powerinfo/3.png","./img/product/powerinfo/4.png"],

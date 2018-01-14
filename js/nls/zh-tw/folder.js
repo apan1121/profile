@@ -114,6 +114,15 @@ define({
             ]
         },
         {
+            "product_name": "旅遊追蹤日記",
+            "product_link": "https://tracker.apan1121.info/",
+            "product_photo": ["./img/product/tracker/1.png", "./img/product/tracker/2.png", "./img/product/tracker/3.png", "./img/product/tracker/4.png", "./img/product/tracker/5.png"],
+            "type": "興趣",
+            "tag": [
+                "RWD", "HTML", "CSS", "Javascript", "Firebase", "Imgur"
+            ]
+        },
+        {
             "product_name": "台灣電廠即時機組發電量",
             "product_link": "https://apan1121.github.io/powerInfo/",
             "product_photo": ["https://apan1121.github.io/powerInfo/img/logo.png", "./img/product/powerinfo/0.png", "./img/product/powerinfo/1.png", "./img/product/powerinfo/2.png", "./img/product/powerinfo/3.png", "./img/product/powerinfo/4.png"],
