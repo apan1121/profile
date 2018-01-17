@@ -62,6 +62,7 @@ define([
             $(".icon-trans[rel!='"+jsVars.lang+"']").addClass("on");
             $(".icon-trans").bind("click", function(){
                 var rel = $(this).attr("rel");
+                mixpanel.track("change lang", {rel: rel});
                 SetCookie("lang", rel);
                 location.reload();
             });
