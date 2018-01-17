@@ -32,6 +32,7 @@ define([
 
             that.target.find(".menu_button").bind("click", function() {
                 var rel = $(this).attr("rel");
+                mixpanel.track("menu btn", {rel: rel});
                 if ($("body").hasClass("mobile")) {
                     $(window).scrollTop($(".section_box[rel='" + rel + "']").offset().top - 30);
                 } else {
@@ -80,6 +81,7 @@ define([
                 QrcodeBox.remove();
             });
             that.$el.append(QrcodeBox);
+            mixpanel.track("open qrcode");
         },
         detectBox: function(scrollTop) {
             var that = this;
