@@ -117,8 +117,10 @@ define([
                     }
                 }
             });
+            setTimeout(function(){
+                that.$el.find('.scrollbar-inner').scrollbar();
+            },500);
 
-            that.$el.find('.scrollbar-inner').scrollbar();
         }
     });
 

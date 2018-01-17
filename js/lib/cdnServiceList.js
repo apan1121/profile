@@ -13,7 +13,8 @@ var CDN = {
 
     moment: ['//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min'],
 
-    jquery_scrollbar: ['//cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar'],
+    // jquery_scrollbar: ['//cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar'],
+    jquery_scrollbar: ['lib/vendor/jquery.scrollbar'],
     jquery_imgLiquid: ['lib/vendor/imgLiquid-min'],
     jquery_colorbox: ['//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min'],
     jquery_colorbox_zh_TW: ['//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/i18n/jquery.colorbox-zh-TW'],
