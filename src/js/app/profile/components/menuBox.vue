@@ -82,6 +82,8 @@ export default {
             localLang: window.localLang,
 
             qrcodeOpen: false,
+
+            view_section_timer: null,
         };
     },
     computed: {
@@ -128,7 +130,10 @@ export default {
         focusTab(newVal, oldVal){
             const that = this;
             if (newVal !== oldVal) {
-                mixpanel.track('view_section', { tab: newVal });
+                clearTimeout(this.view_section_timer);
+                this.view_section_timer = setTimeout(() => {
+                    mixpanel.track('view_section', { tab: newVal });
+                }, 2000);
             }
         },
         qrcodeOpen(newVal){
