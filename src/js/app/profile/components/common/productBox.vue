@@ -53,7 +53,7 @@
 <script>
 import Vue from 'vue';
 import { mapMutations, mapGetters } from 'vuex';
-import { getLang } from 'lib/common/util';
+import { getLang, mixpanel } from 'lib/common/util';
 
 import slickContainer from './slickContainer.vue';
 
@@ -131,9 +131,10 @@ export default {
         ...mapMutations(['setFocusSkill']),
         getLang,
         clickLink(e){
-
+            mixpanel.track('click_product_link', { title: this.product_name, productIndex: this.index });
         },
         clickPhoto(pIndex){
+            mixpanel.track('click_product_photo', { title: this.product_name, productIndex: this.index, photoIndex: pIndex });
             this.$emit('click-photo', { productIndex: this.index, photoIndex: pIndex });
         },
         clickProductBox(){

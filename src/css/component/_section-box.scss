@@ -73,6 +73,10 @@
                     opacity: 1;
                 }
             }
+            .contact-info {
+                color: $color;
+                font-size: 25px;
+            }
         }
     }
     @media screen and (max-width: $mobile-max-size) {

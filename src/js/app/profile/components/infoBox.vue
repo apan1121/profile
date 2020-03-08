@@ -31,7 +31,9 @@
         <div class="info-item" rel="contact-box">
             <div class="contact-wrapper">
                 <div v-for="(socialUrl, socialKey) in profileInfo.social" :key="socialKey" class="contact-item">
-                    <a :href="socialUrl" :title="socialKey" target="_blank">
+                    <a :href="socialUrl" :title="socialKey" target="_blank"
+                        @click="clickSocial(socialKey)"
+                    >
                         <div class="contact-info">
                             <i class="icon" :class="`icon-${socialKey}`"></i>
                         </div>
@@ -43,7 +45,7 @@
 </template>
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import { getLang } from 'lib/common/util';
+import { getLang, mixpanel } from 'lib/common/util';
 
 import VuePerfectScrollbar from 'vue-perfect-scrollbar';
 
@@ -71,6 +73,9 @@ export default {
     methods: {
         ...mapActions({
         }),
+        clickSocial(socialKey){
+            mixpanel.track('click_social', { social: socialKey, in: 'info' });
+        },
     },
 };
 </script>

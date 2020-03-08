@@ -1,8 +1,9 @@
 import Vue from 'vue';
+import Cookies from 'js-cookie';
 import { mapActions, mapGetters, mapMutations } from 'vuex';
 
 import { createStore } from 'lib/store/index';
-import { func, getLang } from 'lib/common/util';
+import { func, getLang, mixpanel } from 'lib/common/util';
 
 import '../app';
 
@@ -15,6 +16,9 @@ import focusSkillBox from './components/focusSkillBox.vue';
 const store = createStore([
     'common',
 ]);
+
+
+mixpanel.track('view', { langKey: window.localLang });
 
 
 const Page = new Vue({
@@ -36,6 +40,8 @@ const Page = new Vue({
     computed: {
         ...mapGetters([
             'browser',
+            'pageSetting_focus',
+            'pageSetting_isMobile',
         ]),
     },
     watch: {
@@ -59,6 +65,16 @@ const Page = new Vue({
             } else {
                 $('body').addClass('pc');
             }
+        },
+        pageSetting_focus(newVal){
+            if (newVal) {
+                mixpanel.track('view_focus');
+            } else {
+                mixpanel.track('view_blur');
+            }
+        },
+        pageSetting_isMobile(newVal){
+            mixpanel.track('device_type', { isMobile: newVal });
         },
     },
     mounted(){

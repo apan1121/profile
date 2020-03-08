@@ -9,7 +9,7 @@
 import Vue from 'vue';
 import { mapMutations, mapGetters } from 'vuex';
 
-import { getLang } from 'lib/common/util';
+import { getLang, mixpanel } from 'lib/common/util';
 
 export default {
     components: {
@@ -38,7 +38,13 @@ export default {
         },
     },
     watch: {
-
+        focusSkill(newVal){
+            if (!!newVal && 1) {
+                mixpanel.track('choose_skill', newVal);
+            } else {
+                mixpanel.track('clear_skill');
+            }
+        },
     },
     mounted(){
     },

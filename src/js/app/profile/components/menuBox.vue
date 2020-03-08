@@ -63,7 +63,7 @@
 import Vue from 'vue';
 import Cookies from 'js-cookie';
 import { mapMutations, mapGetters } from 'vuex';
-import { getLang } from 'lib/common/util';
+import { getLang, mixpanel } from 'lib/common/util';
 
 
 export default {
@@ -125,6 +125,19 @@ export default {
                 this.setPageSetting({ focusTab: that.focusTab });
             }
         },
+        focusTab(newVal, oldVal){
+            const that = this;
+            if (newVal !== oldVal) {
+                mixpanel.track('view_section', { tab: newVal });
+            }
+        },
+        qrcodeOpen(newVal){
+            if (newVal && 1) {
+                mixpanel.track('open_qrcode');
+            } else {
+                mixpanel.track('close_qrcode');
+            }
+        },
     },
     mounted(){
 
@@ -136,12 +149,16 @@ export default {
         getLang,
         clickMenuTab(tabKey){
             if (tabKey !== this.focusTab) {
+                mixpanel.track('click_menuTab', { tab: tabKey });
                 this.$emit('click-menu-tab', tabKey);
             }
         },
         chooseLang(langKey){
+            mixpanel.track('choose_lang', { langKey });
             Cookies.set('langKey', langKey, { expires: 7 });
-            window.location.reload();
+            setTimeout(() => {
+                window.location.reload();
+            }, 100);
         },
         openQrcode(bool){
             this.qrcodeOpen = bool;

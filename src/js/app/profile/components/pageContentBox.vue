@@ -15,7 +15,6 @@
                             :is="sectionKeys[menuKey]"
                             :key="menuKey"
                             :click-tab-key="clickTabKey"
-                            @exposure-act="focusTabAct"
                             @scroll-to="scrollTo"
                         ></component>
                     </template>
@@ -121,9 +120,6 @@ export default {
                     }
                 }, 100);
             }).trigger('resize');
-        },
-        focusTabAct(data){
-            this.focusTab = data.boxName;
         },
         vueScrollHandle(evt){
             const that = this;

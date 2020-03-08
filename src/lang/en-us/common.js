@@ -4,12 +4,13 @@ export default {
     title: {
         name: 'Name',
         sex: 'Sex',
-        birth: 'Birth',
-        age: 'Age',
+        birth: 'Birth/Age',
         army: 'Army',
         married: 'Marital',
         location: 'Location',
         interest: 'Interest',
+
+        social: 'contact',
 
         school_name: 'School',
         edu_title: 'Title',

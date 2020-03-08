@@ -12,8 +12,7 @@ export default {
     },
 
     sex: 'Male ♂',
-    birth: '1985-05',
-    age: '34',
+    birth: '1985-05 / 34',
     // army: '預士 退役',
     location: 'Taipei, Taiwan',
     married: 'unmarried',

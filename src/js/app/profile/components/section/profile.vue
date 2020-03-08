@@ -18,6 +18,23 @@
                         </div>
                     </div>
                 </template>
+                <div class="section-tr">
+                    <div class="section-td" rel="th">
+                        {{ getLang(`common.title.social`) }}
+                    </div>
+                    <div class="section-td">
+                        <template v-for="(socialUrl, socialKey) in profileInfo.social">
+                            <a :key="socialKey" class="mr-10" :href="socialUrl"
+                                target="_blank"
+                                @click="clickSocial(socialKey)"
+                            >
+                                <span class="contact-info tooltip" :data-title="socialKey">
+                                    <i class="icon" :class="`icon-${socialKey}`"></i>
+                                </span>
+                            </a>
+                        </template>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -27,7 +44,7 @@ import Vue from 'vue';
 import { mapActions, mapGetters } from 'vuex';
 import section from 'lib/common/mixins/section';
 
-import { getLang } from 'lib/common/util';
+import { getLang, mixpanel } from 'lib/common/util';
 
 
 export default {
@@ -59,6 +76,9 @@ export default {
     methods: {
         ...mapActions({
         }),
+        clickSocial(socialKey){
+            mixpanel.track('click_social', { social: socialKey, in: 'profile' });
+        },
     },
 };
 </script>

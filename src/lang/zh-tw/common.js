@@ -4,12 +4,13 @@ export default {
     title: {
         name: '姓名',
         sex: '性別',
-        birth: '生日',
-        age: '年齡',
+        birth: '生日/年齡',
         army: '兵役',
         married: '婚姻',
         location: '居住地',
         interest: '興趣',
+
+        social: '聯絡方式',
 
         school_name: '學校',
         edu_title: '學歷',

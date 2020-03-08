@@ -12,8 +12,8 @@ export default {
     },
 
     sex: '男♂',
-    birth: '1985-05',
-    age: '35 歲',
+    birth: '1985-05 / 35 歲',
+    age: '',
     army: '預士 退役',
     location: '台北, 台灣',
     married: '未婚',
