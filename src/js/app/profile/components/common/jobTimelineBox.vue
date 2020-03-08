@@ -61,6 +61,8 @@
 import Vue from 'vue';
 import { mapMutations, mapGetters } from 'vuex';
 
+import { mixpanel } from 'lib/common/util';
+
 import timeline from 'lib/common/mixins/timeline';
 
 
@@ -77,7 +79,7 @@ export default {
     },
     data(){
         return {
-
+            viewInTimer: null,
         };
     },
     computed: {
@@ -92,7 +94,15 @@ export default {
         },
     },
     watch: {
-
+        view_in(newVal){
+            if (newVal) {
+                this.viewInTimer = setTimeout(() => {
+                    mixpanel.track('view_job', { title: this.jobInfo.company_name });
+                }, 2000);
+            } else {
+                clearTimeout(this.viewInTimer);
+            }
+        },
     },
     mounted(){
     },

@@ -14,6 +14,7 @@ export default {
             contentTop: 0,
             contentHeight: 0,
             view_in: false,
+            viewInTimer: null,
         };
     },
     computed: {

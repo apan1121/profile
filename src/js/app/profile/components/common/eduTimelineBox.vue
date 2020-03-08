@@ -42,6 +42,8 @@
 import Vue from 'vue';
 import { mapActions, mapGetters } from 'vuex';
 
+import { mixpanel } from 'lib/common/util';
+
 import timeline from 'lib/common/mixins/timeline';
 
 
@@ -66,7 +68,15 @@ export default {
         ]),
     },
     watch: {
-
+        view_in(newVal){
+            if (newVal) {
+                this.viewInTimer = setTimeout(() => {
+                    mixpanel.track('view_edu', { title: `${this.eduInfo.school_name} ${this.eduInfo.edu_title}` });
+                }, 2000);
+            } else {
+                clearTimeout(this.viewInTimer);
+            }
+        },
     },
     mounted(){
     },
