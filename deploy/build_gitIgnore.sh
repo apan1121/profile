@@ -19,4 +19,6 @@ else
     echo "/node_modules/
 package-lock.json
 " > $PUBLIC_GIT_IGNORE_PATH
+
+rm "$ABS_DIR/dist/.gitignore"
 fi
