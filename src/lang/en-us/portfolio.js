@@ -227,7 +227,7 @@ export default {
         },
         {
             product_name: 'Lucky Draw',
-            product_link: 'https://apan1121.github.io/luckyDraw/',
+            product_link: 'https://apan1121.github.io/luckydraw/',
             product_photo: [
                 './dist/img/product/luckydraw/luckydraw-01.png',
                 './dist/img/product/luckydraw/luckydraw-02.png',

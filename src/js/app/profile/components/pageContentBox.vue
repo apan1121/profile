@@ -51,10 +51,10 @@ export default {
         menuBox,
 
         sectionProfile,
-        sectionEducation,
         sectionJob,
         sectionExperience,
         sectionPortfolio,
+        sectionEducation,
     },
     props: {
 

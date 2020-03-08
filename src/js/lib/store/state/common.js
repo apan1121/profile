@@ -31,10 +31,10 @@ export default {
 
     menuIcon: {
         profile: 'icon-profile',
-        education: 'icon-education',
         job: 'icon-job',
         experience: 'icon-tool',
         portfolio: 'icon-folder',
+        education: 'icon-education',
     },
 
     backgroundImg: [
