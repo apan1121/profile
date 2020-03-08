@@ -5,7 +5,7 @@ export default {
             company_title: '資深全端工程師',
             company_logo: './dist/img/company_logo/pressplay.png',
             startDate: '2018.19',
-            endDate: 'now',
+            endDate: 'present',
             company_product: [
                 'PressPlay 知識付費內容平台',
                 'PressPlay Group',

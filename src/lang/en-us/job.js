@@ -5,7 +5,7 @@ export default {
             company_title: 'Senior Full Stack Engineer',
             company_logo: './dist/img/company_logo/pressplay.png',
             startDate: '2018.19',
-            endDate: 'now',
+            endDate: 'present',
             company_product: [
                 'PressPlay',
                 'PressPlay Group',

@@ -10,10 +10,10 @@
                     class="perfect-scrollbar"
                     @ps-scroll-y="vueScrollHandle"
                 >
-                    <template v-for="sectionKey in sectionKeys">
+                    <template v-for="(menuIcon, menuKey) in menuIcon">
                         <component
-                            :is="sectionKey"
-                            :key="sectionKey"
+                            :is="sectionKeys[menuKey]"
+                            :key="menuKey"
                             :click-tab-key="clickTabKey"
                             @exposure-act="focusTabAct"
                             @scroll-to="scrollTo"
@@ -65,17 +65,18 @@ export default {
             pageWidth: 0,
             focusTabKey: 'profile',
             clickTabKey: '',
-            sectionKeys: [
-                'sectionProfile',
-                'sectionEducation',
-                'sectionJob',
-                'sectionExperience',
-                'sectionPortfolio',
-            ],
+            sectionKeys: {
+                profile: 'sectionProfile',
+                education: 'sectionEducation',
+                job: 'sectionJob',
+                experience: 'sectionExperience',
+                portfolio: 'sectionPortfolio',
+            },
         };
     },
     computed: {
         ...mapGetters([
+            'menuIcon',
             'pageSetting_isMobile',
         ]),
         contentComponent(){
