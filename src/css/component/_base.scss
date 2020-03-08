@@ -1,0 +1,103 @@
+
+$color: #193b8a;
+$white: #FFF;
+$dark: #313130;
+$orange: #ffbe89;
+$dark-orange: #CE6712;
+$gray: #aaa;
+$blue: #337ab7;
+
+$mobile-max-size: 750px;
+$tablet-max-size: 850px;
+
+$mobile-max-height-size: 500px;
+
+
+@mixin transition($time: 0.2s) {
+    transition: all $time ease;
+}
+
+@mixin user-select(){
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+    font-display: swap;
+}
+
+.lazyload{
+    background: $gray;
+    &.done{
+        background-color: $white;
+    }
+}
+
+body{
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            flex: none;
+            width : calc(#{percentage($i/12)} - 5px);
+            margin-right: 5px;
+            margin-bottom: 5px;
+            @include transition;
+        }
+    }
+}
+
+@for $i from 1 through 20 {
+    .p-#{$i} {
+        padding: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+
+    .m-#{$i} {
+        margin: #{$i}px;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+}

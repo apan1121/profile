@@ -1,0 +1,202 @@
+@import './base.scss';
+
+.info-box{
+    display: flex;
+    align-content:stretch;
+    flex-direction:column;
+    padding: 0px;
+    .info-item{
+        flex: 1;
+        &[rel='avatar-box']{
+            flex: none;
+
+            .avatar-img-box{
+                overflow: hidden;
+                margin: 10px auto;
+                width: 130px;
+                height: 130px;
+                border: 5px solid rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                .avatar-img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+        &[rel='brief-box']{
+            flex: none;
+            padding-bottom: 5px;
+            .brief-wrapper {
+                display: flex;
+                align-content:stretch;
+                flex-direction:column;
+                width: 100%;
+                height: 100%;
+                .brief-item{
+                    flex: none;
+                    margin: 2px 2px;
+                    color: rgba($white, 0.5);
+                    text-align: center;
+                    font-size: 15px;
+                    &[rel='brief-name']{
+                        color: rgba($white, 0.6);
+                        font-weight: 900;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &[rel='intro-box']{
+            position: relative;
+            .intro-wrapper{
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                height: calc(100% - 20px);
+                color: rgba($white, 0.5);
+                transform: translateY(-50%);
+                .perfect-scrollbar{
+                    padding: 5px 20px;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 15px;
+                    line-height: 25px;
+                    .ps__rail-y{
+                        border-radius: 4px;
+                        .ps__thumb-y{
+                            background-color: $dark;
+                        }
+                        &:hover {
+                            background-color: #eee;
+                            opacity: .5;
+                        }
+                    }
+                }
+            }
+            &:after{
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                width: calc(100% - 20px);
+                height: 2px;
+                background: rgba($white, 0.5);
+                content: '';
+                transform: translate(-50%, 0);
+
+                @include transition;
+            }
+        }
+        &[rel='contact-box']{
+            position: relative;
+            flex: none;
+            height: 50px;
+            .contact-wrapper{
+                display: flex;
+                align-content:stretch;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 10px;
+                height: 100%;
+                .contact-item{
+                    flex: 1;
+                    text-align: center;
+                    .contact-info{
+                        display: inline-block;
+                        color: rgba($white, 0.5);
+                        font-size: 30px;
+
+                        @include transition;
+                    }
+                }
+            }
+            &:after{
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                width: calc(100% - 20px);
+                height: 2px;
+                background: rgba($white, 0.5);
+                content: '';
+                transform: translate(-50%, 0);
+
+                @include transition;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: $mobile-max-size) {
+        display: flex;
+        flex-direction: row;
+        .info-item {
+            &[rel='avatar-box']{
+                display: flex;
+                margin-left: 10px;
+                .avatar-img-box{
+                    margin: auto 0;
+                }
+            }
+            &[rel='brief-box']{
+                display: flex;
+                flex: 1;
+                flex: 1;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+                .brief-wrapper {
+                    display: block;
+                    height: auto;
+                    .brief-item{
+                        text-align: left;
+                    }
+                }
+            }
+            &[rel='intro-box']{
+                display: none;
+            }
+            &[rel='contact-box']{
+                width: 40px;
+                height: auto;
+                .contact-wrapper{
+                    flex-direction:column;
+                    margin: 0px 0px;
+                    padding: 10px 0px;
+                    .contact-item{
+                        .contact-info{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                &:after{
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    width: 2px;
+                    height: calc(100% - 20px);
+                    content: '';
+                    transform: translate(0px, -50%);
+                }
+            }
+        }
+    }
+}
+
+body:not(.mobile){
+    .info-box{
+        .info-item{
+            &[rel='contact-box']{
+                .contact-wrapper{
+                    .contact-item{
+                        .contact-info{
+                            &:hover{
+                                color: rgba($white, 0.8);
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

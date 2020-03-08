@@ -1,0 +1,211 @@
+@import './base.scss';
+
+.menu-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .menu-wrapper{
+        position: absolute;
+        // overflow: hidden;
+        border-radius: 4px;
+        .menu-item{
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: $color;
+            cursor: pointer;
+
+            @include user-select;
+
+            .icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: rgba($white, 0.5);
+                font-size: 30px;
+                transform: translate(-50%, -50%);
+            }
+            &.active{
+                background: rgba($white, 1);
+                .icon{
+                    color: rgba($color, 1);
+                }
+            }
+
+            &:not(:last-child){
+                &:after{
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    height: 1px;
+                    background: rgba($white, 0.5);
+                    content: '';
+                }
+            }
+
+            &:first-child{
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            &:last-child{
+                border-bottom-right-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+        &[rel='tab'] {
+            top: 0px;
+            left: 0px;
+        }
+
+        &[rel='tool'] {
+            bottom: 0px;
+            left: 0px;
+            .menu-item{
+                background: $dark;
+
+                &.active{
+                    background: rgba($white, 1);
+                    .icon{
+                        color: rgba($dark, 1);
+                    }
+                }
+
+                &:not(:last-child){
+                    &:after{
+                        position: absolute;
+                        bottom: 0px;
+                        width: 100%;
+                        height: 1px;
+                        background: rgba($white, 0.5);
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $mobile-max-size) {
+        .menu-wrapper{
+            display: flex;
+            align-content:stretch;
+            width: 100%;
+            height: 100%;
+            .menu-item{
+                flex: 1;
+                width: initial;
+                height: 100%;
+                .icon{
+                    font-size: 25px;
+                }
+
+                &:not(:last-child){
+                    &:after{
+                        position: absolute;
+                        right: 0px;
+                        bottom: initial;
+                        width: 1px;
+                        height: 100%;
+                        background: rgba($white, 0.5);
+                        content: '';
+                    }
+                }
+            }
+            &[rel='tool']{
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-height: $mobile-max-height-size) {
+        .menu-wrapper{
+            &[rel='tool']{
+                display: none;
+            }
+        }
+    }
+}
+
+body:not(.mobile){
+    @media screen and (min-width: $mobile-max-size) {
+    .menu-box{
+        .menu-wrapper{
+            z-index: 150;
+            .menu-item{
+                &:before{
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    z-index: -1;
+                    box-sizing: content-box;
+                    padding: 10px;
+                    border-radius: 4px;
+                    background: $dark;
+                    color: $white;
+                    content: attr(data-title);
+                    white-space:nowrap;
+                    font-size: 14px;
+                    opacity: 0;
+                    transform: translateY(-50%) translateX(-105%) rotate(90deg);
+                    transform-origin: center right;
+
+                    box-shadow: 0px 0px 5px $color;
+                    pointer-events: none;
+                    @include transition;
+                }
+                &:not(.active):hover{
+                    .icon{
+                        color: rgba($white, 0.9);
+                        font-size: 32px;
+                    }
+                }
+                &:hover{
+
+                    &:before{
+                        left: 0px;
+                        z-index: -1;
+                        opacity: 1;
+                        transform: translateY(-50%) translateX(-105%) rotate(0deg);
+                    }
+                }
+            }
+
+        }
+    }
+    }
+}
+
+
+
+
+.qrcode-wrapper{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9000;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($dark, 0.8);
+    opacity: 0;
+    &.show{
+        display: block;
+        opacity: 1;
+    }
+
+    .qrcode-wrapper-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 5px;
+        width: 250px;
+        height: 250px;
+        border-radius: 4px;
+        background: rgba($white, 1);
+        transform: translate(-50%, -50%);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
