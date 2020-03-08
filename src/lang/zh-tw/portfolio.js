@@ -116,7 +116,7 @@ export default {
             product_photo: ['./dist/img/product/fit/fit.png', './dist/img/product/fit/0.png'],
             type: '工作',
             skills: [
-                'CodeIgniter', 'BackboneJS', 'LESS',
+                'Yii', 'BackboneJS', 'LESS',
                 'HTML5', 'CSS3', 'PHP', 'Javascript',
                 'MySQL', 'Redis',
                 'i18n', 'GA',
@@ -129,7 +129,7 @@ export default {
             product_photo: ['./dist/img/product/run/run.png', './dist/img/product/run/0.png', './dist/img/product/run/1.png', './dist/img/product/run/2.png', './dist/img/product/run/3.png', './dist/img/product/run/4.png', './dist/img/product/run/5.png', './dist/img/product/run/6.png'],
             type: '工作',
             skills: [
-                'CodeIgniter', 'BackboneJS', 'LESS',
+                'Yii', 'BackboneJS', 'LESS',
                 'HTML5', 'CSS3', 'PHP', 'Javascript',
                 'MySQL', 'Redis',
                 'i18n', 'GA',
@@ -142,7 +142,7 @@ export default {
             product_photo: ['./dist/img/product/travel/travel.png', './dist/img/product/travel/0.png', './dist/img/product/travel/1.png'],
             type: '工作',
             skills: [
-                'CodeIgniter', 'BackboneJS', 'LESS',
+                'Yii', 'BackboneJS', 'LESS',
                 'HTML5', 'CSS3', 'PHP', 'Javascript',
                 'MySQL', 'Redis',
                 'i18n', 'GA',
